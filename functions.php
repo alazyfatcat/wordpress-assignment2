@@ -648,20 +648,11 @@ function register_widget_areas() {
     'before_title'  => '<h4>',
     'after_title'   => '</h4>',
   ));
-  register_sidebar( array(
+	register_sidebar( array(
     'name'          => 'Footer area three',
     'id'            => 'footer_area_three',
     'description'   => 'This widget area discription',
     'before_widget' => '<section class="footer-area footer-area-three">',
-    'after_widget'  => '</section>',
-    'before_title'  => '<h4>',
-    'after_title'   => '</h4>',
-  ));
-  register_sidebar( array(
-    'name'          => 'Footer area four',
-    'id'            => 'footer_area_four',
-    'description'   => 'This widget area discription',
-    'before_widget' => '<section class="footer-area footer-area-four">',
     'after_widget'  => '</section>',
     'before_title'  => '<h4>',
     'after_title'   => '</h4>',

@@ -23,7 +23,7 @@ get_header();
         </div>
      </div>
   </section>
-  <div><?php get_sidebar(); ?></div>
+
 </main>
 <?php
   get_footer();

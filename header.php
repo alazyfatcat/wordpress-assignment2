@@ -19,17 +19,22 @@
 		<nav>
 		<!-- logo -->
 		<div class="menu-nav">
-			<a href="<?php echo esc_url( home_url() );?>">
-				<img src="<?php echo esc_url( home_url( 'wp-content/uploads/2021/04/logo.png' ) );?>" alt="camping logo">
-			</a>
-			<?php
-				wp_nav_menu(array(
-					'menu' => 'major', //this is the name that we gave our menu when we made it
-					'theme_location' => '', // we will leave this empty
-					'depth' => 5, // how many sub menu it can go
-					'fallback_cb' => false // we don't want to set a fall back so just set to false
-				));
-			?>
+			<div class="div-logo">
+				<a href="<?php echo esc_url( home_url() );?>">
+					<img src="<?php echo esc_url( home_url( 'wp-content/uploads/2021/04/logo.png' ) );?>" alt="camping logo">
+			  </a>
+				<p>Camping Fire</p>
+			</div>
+			<div class="nav-links">
+				<?php
+					wp_nav_menu(array(
+						'menu' => 'major', //this is the name that we gave our menu when we made it
+						'theme_location' => '', // we will leave this empty
+						'depth' => 5, // how many sub menu it can go
+						'fallback_cb' => false // we don't want to set a fall back so just set to false
+					));
+				?>
+			</div>
 		</div>
 		</nav>
 	</header>
